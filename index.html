@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bubble Game</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-[#090040] min-h-screen w-full flex flex-col items-center justify-center p-2">
+
+  <!-- Title -->
+  <h1
+    class="font-bold font-mono text-xl sm:text-2xl md:text-3xl lg:text-4xl text-white bg-[#B13BFF] rounded-md px-4 py-2 mb-4 text-center">
+    Bubble Game
+  </h1>
+
+  <!-- Main Game Box -->
+  <div
+    class="main w-full max-w-[1000px] h-[80vh] bg-[#471396] flex flex-col justify-center items-center rounded-lg duration-500 overflow-hidden">
+
+    <!-- Top Stats Bar -->
+    <div class="p1 w-full bg-[#B13BFF] flex flex-wrap sm:flex-nowrap items-center justify-around text-white text-sm sm:text-lg py-2">
+      
+      <div class="elem flex items-center justify-center font-bold m-2">
+        <h1>Hit </h1>
+        <span
+          class="hit bg-amber-200 h-8 w-8 sm:h-10 sm:w-10 flex items-center justify-center mx-2 rounded-sm text-black text-sm sm:text-base">1</span>
+      </div>
+
+      <div class="elem flex items-center justify-center font-bold m-2">
+        <h1>Timer </h1>
+        <span
+          class="time bg-amber-200 h-8 w-8 sm:h-10 sm:w-10 flex items-center justify-center mx-2 rounded-sm text-black text-sm sm:text-base">60</span>
+      </div>
+
+      <div class="elem flex items-center justify-center font-bold m-2">
+        <h1>Score </h1>
+        <span
+          class="score bg-amber-200 h-8 w-8 sm:h-10 sm:w-10 flex items-center justify-center mx-2 rounded-sm text-black text-sm sm:text-base">0</span>
+      </div>
+    </div>
+
+    <!-- Playground -->
+    <div class="p2 flex flex-wrap justify-center items-center text-center overflow-y-auto p-2">
+      <!-- bubbles will be generated here -->
+    </div>
+  </div>
+
+  <!-- Start Button -->
+  <button
+    class="st bg-[#FFCC00] font-bold cursor-pointer hover:text-white hover:bg-green-500 duration-500 py-2 px-4 rounded-md mt-4 text-sm sm:text-base">
+    Start Game
+  </button>
+
+  <script src="app.js"></script>
+</body>
+</html>
